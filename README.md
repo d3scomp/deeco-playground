@@ -17,7 +17,7 @@ There are two scripts for each scenario, simulation and visualization. Each scen
 
 ## Virtual machine
 
-In order to make launching of the project as simple as possible, we have prepared a virtual machine image (for [VirtualBox](https://www.virtualbox.org/)) that can be downloaded [here](http://d3s.mff.cuni.cz/software/deeco/files/deeco-playground-vm.zip). It contains the project with all of its dependencies already installed, along with IDE and documentation files. 
+In order to make launching of the project as simple as possible, we have prepared a virtual machine image (for [VirtualBox](https://www.virtualbox.org/)) that can be downloaded [here](http://d3s.mff.cuni.cz/software/deeco/files/deeco-playground-vm.zip). It contains a Linux installation with the project and all of its dependencies already installed, along with IDE and documentation files. On the desktop of the VM you can find a readme file with instructions on running the project, using IDE, etc.
 
 ## Using ant build file
 
