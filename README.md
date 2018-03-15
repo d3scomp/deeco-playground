@@ -1,6 +1,6 @@
 # DEECo Playground
 
-DEECo Playgrond is a framework for simulation and visualization of scenarios for smart Cyber-Physical Systems. Its goal is to help in prototyping and testing of software for sCPS. In particular, it can be used for developing and testing scenarios featuring autonomous mobile entities (like robots or autonomous vehicles) that cooperate with each other, with other smart objects placed in the environment and with the environment itself.
+DEECo Playgrond is a framework for simulation and visualization of scenarios for smart Cyber-Physical Systems (sCPS). Its goal is to help in prototyping and testing of software for sCPS. In particular, it can be used for developing and testing scenarios featuring autonomous mobile entities (like robots or autonomous vehicles) that cooperate with each other, with other smart objects placed in the environment and with the environment itself.
 
 ## Execution of example scenarios
 
@@ -49,7 +49,11 @@ The **manual.html** page contains a more technical description of the things tha
 
 ## Project structure
 
-The source code of the framework and the example scenarios can be found in the `src/java` folder. The XSD schemas for scenario files and visualization configuration files are located in the `src/resources` folder. Folder `examples` contains the scenario files, the configuration files, the textures and the bitmaps of obstacles used in all the example scenarios.
+The source code of the framework and the example scenarios can be found in the `src/java` folder.
+
+The XSD schemas for scenario files and visualization configuration files are located in the `src/resources` folder.
+
+Folder `examples` contains the scenario files, the configuration files, the textures and the bitmaps of obstacles used in all the example scenarios.
 
 ## License
 
