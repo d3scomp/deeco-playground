@@ -51,5 +51,4 @@ Simulation and Visualization respectively.
 
 ## License
 
-Our work is licensed under the [Apache 2 License](http://www.apache.org/licenses/LICENSE-2.0.html), 
-meaning that you can use it free of charge, without strings attached in commercial and non-commercial projects. 
+[Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0.html). 
