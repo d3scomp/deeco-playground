@@ -90,11 +90,13 @@ There are also `.project` and `.classpath` files in the project directory, that 
 
 ## Documentation
 
-If you are interested in creation of new scenarios with this framework, you can read the Scenario Creation Guide (**Guide.pdf**), which can be found in the repository. It contains a step-by-step tutorial illustrating the process of of scenario creation on two examples.
+There are three main documents.
 
-The architecture of the playground, its internal structure and implementation are described in detail in the  **Architecture.pdf** document.
+**Guide.pdf** contains the Scenario Creation Guide. It is a step-by-step tutorial illustrating the process of a scenario creation on two examples.
 
-The **manual.html** page contains a more technical description of the things that can be useful for scenario developers. It describes the formats of scenario files and configuration files; and provides an overview of the classes that user needs to use in the process of scenario creation, explaining the meaning and function of all their methods and attributes. The links in this file refer to the javadoc pages (you need to generate javadoc in order to make them work).
+**Architecture.pdf** describes the architecture of the playground framework and its internal structures and detailes the implementation.
+
+**manual.html** page contains a technical description of scenario creation and configuration. It describes the formats of scenario files and configuration files. Also it provides an overview of the classes (i.e., components and ensembles) that a user needs to create in the process of scenario creation, explaining the meaning and behavior of all their methods and fields. The links in the file may refer to the javadoc documentation (you need to generate javadoc with the `ant doc` command in order to make them work).
 
 ## Project structure
 
