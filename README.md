@@ -4,7 +4,7 @@ DEECo Playgrond is a framework for simulation and visualization of scenarios for
 
 ## Execution of example scenarios
 
-In order to run the application you need to have JDK >=8 installed.
+In order to run the application you need to have Java 8 or newer installed.
 
 There are three prepared and ready-to-run example scenarions. They can be executed with shell scripts (on Linux systems) or batch files (on Windows), which are in the `demos-linux` resp. `demos-windows` directories. 
 
