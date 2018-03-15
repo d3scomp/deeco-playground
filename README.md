@@ -24,21 +24,32 @@ The `*-visualize.sh` script launches the visualizer configured with data produce
 
 ### Scenario 1
 
-Description here
+The scenario features two types of robots. There is a one robot of the type PredatorRobot, which moves randomly through
+the field. All the other robots are of the type PreyRobot, and are programmed to run away from the predator, if it
+appears near them. The prey robots receive the information about the position of the predator through an ensemble.
+The scenario also show the default visualization without any additional layers.
 
-Its configuration is in the file `examples/scenarios/competition.xml`.
+Its configuration is in the file `examples/scenarios/predator.xml`.
 
 ### Scenario 2
 
-Description here
+The Firefighters scenario presents a case in which a team of firefighter robots has an objective to extinguish fires
+appearing on the field. The leader of the firefighter team collects information about each robot's situation, and issues
+orders to its teammates based on that information. The scenario shows usage of an additional layer of the environment,
+the temperature layer, in which the fires appear. Robots in this scenario are equipped with additional temperature
+sensors and fire extinguishers to interact with this layer. There is also the recharge station charging the robors (for movements and extinguishing, the robors consumes energy).
 
 Its configuration is in the file `examples/scenarios/firefighters.xml`.
 
 ### Scenario 3
 
-Description here
+In the Competition scenario, two teams of robots compete with each other for items appearing on the screen. The items
+are interactive objects programmed to disappear when a robot shows up near them, and to reappear later at a different
+location. A team receives a point for each item collected in this way. The simulation stops when a team receives a
+defined number of points. In this scenario, robots' movements consume energy stored in their batteries, which can be
+recharged at charging stations of each team.
 
-Its configuration is in the file `examples/scenarios/predator.xml`.
+Its configuration is in the file `examples/scenarios/competition.xml`.
 
 ## Virtual machine
 
@@ -58,11 +69,13 @@ In the case of simulation the `arguments` are scenario files (more than one can 
 The ant build file also allows to generate javadoc with the command `ant doc` and to clean the generated files from the directory with `ant clean`.
 
 
-## Importing the project to IDE
+## Opening the project in IDE
 
-The project directory can be opened as an [IntelliJ IDEA](https://www.jetbrains.com/idea/download/) project. As such it will contain several predefined run configurations. For each existing scenario, there are two of them: one for simulation, and one for visualization. In order to run the visualization of the scenario you need to simulate it first (since the simulation produces the logs, which are then supplied to the visualization). 
+The project directory can be opened as an [IntelliJ IDEA](https://www.jetbrains.com/idea/download/) project. As such it will contain several predefined run configurations. For each existing scenario, there are two of them: one for simulation, and one for visualization. In order to run the visualization of the scenario you need to simulate it first (since the simulation produces the logs, which are then supplied to the visualization).
 
-There are also `.project` and `.classpath` files in the project directory, that can be used to import the project to Eclipse or NetBeans. The runnable classes are `cz.cuni.mff.d3s.deeco.playground.simulation.Main` and `cz.cuni.mff.d3s.deeco.playground.visualization.Main` for imulation and visualization respectively.
+These launch configurations are available in the combo-box on the top toolbar in IDE. You can just choose the desired configuration in the combo-box and then hit the launch button (the green triangle on the right side of the combo-box).
+
+There are also `.project` and `.classpath` files in the project directory, that can be used to import the project to Eclipse or NetBeans. The runnable classes are `cz.cuni.mff.d3s.deeco.playground.simulation.Main` and `cz.cuni.mff.d3s.deeco.playground.visualization.Main` for simulation and visualization respectively.
 
 ## Documentation
 
