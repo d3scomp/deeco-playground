@@ -57,7 +57,7 @@ In order to make launching of the project as simple as possible, we have prepare
 
 To run the above described scenarios
 * open the terminal (third icon on the left toolbar)
-* change the current directory with the command `cd Desktop/deeco-playground/demos-linus`
+* change the current directory with the command `cd Desktop/deeco-playground/demos-linux`
 * run the launching scripts, i.e:
   * `./demo-1-predator-simulate.sh`
   * `./demo-1-predator-visualize.sh`
