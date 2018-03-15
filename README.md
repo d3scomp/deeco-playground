@@ -6,14 +6,39 @@ DEECo Playgrond is a framework for simulation and visualization of scenarios for
 
 In order to run the application you need to have JDK >=8 installed.
 
-Several example scenarios can be executed with corresponding shell scripts (on Linux systems) or batch files (on Windows). They can be found in the `demos-linux` and `demos-windows` directories respectively. 
+There are three prepared and ready-to-run example scenarions. They can be executed with shell scripts (on Linux systems) or batch files (on Windows), which are in the `demos-linux` resp. `demos-windows` directories. 
 
-There are two scripts for each scenario, simulation and visualization. Each scenario has to be simulated before it can be visualized, e.g.:
+There are always two scripts for each scenario, simulation and visualization.
+Each scenario has to be simulated before it can be visualized, i.e., the correct sequence of execution is :
 
 ```
-./demo-2-firefighters-simulate.sh
-./demo-2-firefighters-visualize.sh
+./name-of-scenario-simulate.sh
+./name-of-scenarion-visualize.sh
 ```
+The `*-simulate.sh` script launches the simulator. It continuously outputs information about simulation progress and in the end, it prints statistics about the simulation.
+
+The `*-visualize.sh` script launches the visualizer configured with data produced by the simulator. It opens a window, in which the visualization runs. It can be controlled via the following keys:
+- left arrow - skip several steps back
+- right arrow - skip several steps forward
+- space - pause/resume visualization
+
+### Scenario 1
+
+Description here
+
+Its configuration is in the file `examples/scenarios/competition.xml`.
+
+### Scenario 2
+
+Description here
+
+Its configuration is in the file `examples/scenarios/firefighters.xml`.
+
+### Scenario 3
+
+Description here
+
+Its configuration is in the file `examples/scenarios/predator.xml`.
 
 ## Virtual machine
 
