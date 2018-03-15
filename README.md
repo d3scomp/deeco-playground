@@ -55,6 +55,17 @@ Its configuration is in the file `examples/scenarios/competition.xml`.
 
 In order to make launching of the project as simple as possible, we have prepared a virtual machine image (for [VirtualBox](https://www.virtualbox.org/)) that can be downloaded [here](http://d3s.mff.cuni.cz/software/deeco/files/deeco-playground-vm.zip). It contains a Linux installation with the project and all of its dependencies already installed, along with IDE and documentation files. On the desktop of the VM you can find a readme file with instructions on running the project, using IDE, etc.
 
+To run the above described scenarios
+* open the terminal (third icon on the left toolbar)
+* change the current directory with the command `cd Desktop/deeco-playground/demos-linus`
+* run the launching scripts, i.e:
+  * `./demo-1-predator-simulate.sh`
+  * `./demo-1-predator-visualize.sh`
+  * `./demo-2-firefighters-simulate.sh`
+  * `./demo-2-firefighters-visualize.sh`
+  * `./demo-3-competition-simulate.sh`
+  * `./demo-3-competition-visualize.sh`
+
 ## Using ant build file
 
 If you have [Apache Ant](http://ant.apache.org/) installed, you can run simulations and visualizations with the following commands (run from the project root directory):
