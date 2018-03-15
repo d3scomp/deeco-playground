@@ -1,10 +1,6 @@
 # DEECo Playground
 
-DEECo Playgrond is a framework for simulation and visualization of scenarios for smart Cyber-Physical Systems. 
-
-## Virtual machine
-
-http://d3s.mff.cuni.cz/software/deeco/files/deeco-playground-vm.zip
+DEECo Playgrond is a framework for simulation and visualization of scenarios for smart Cyber-Physical Systems. Its goal is to help in prototyping and testing of software for sCPS. In particular, it can be used for developing and testing scenarios featuring autonomous mobile entities (like robots or autonomous vehicles) that cooperate with each other, with other smart objects placed in the environment and with the environment itself.
 
 ## Execution of example scenarios
 
@@ -18,6 +14,11 @@ There are two scripts for each scenario, simulation and visualization. Each scen
 ./demo-2-firefighters-simulate.sh
 ./demo-2-firefighters-visualize.sh
 ```
+
+## Virtual machine
+
+In order to make launching of the project as simple as possible, we have prepared a virtual machine image (for [VirtualBox](https://www.virtualbox.org/)) that can be downloaded [here](http://d3s.mff.cuni.cz/software/deeco/files/deeco-playground-vm.zip). It contains the project with all of its dependencies already installed, along with IDE and documentation files. 
+
 ## Using ant build file
 
 If you have [Apache Ant](http://ant.apache.org/) installed, you can run simulations and visualizations with the following commands (run from the project root directory):
@@ -45,6 +46,10 @@ If you are interested in creation of new scenarios with this framework, you can 
 The architecture of the playground, its internal structure and implementation are described in detail in the  **Implementation and Architecture** document.
 
 The **manual.html** page contains a more technical description of the things that can be useful for scenario developers. It describes the formats of scenario files and configuration files; and provides an overview of the classes that user needs to use in the process of scenario creation, explaining the meaning and function of all their methods and attributes. The links in this file refer to the javadoc pages (you need to generate javadoc in order to make them work).
+
+## Project structure
+
+The source code of the framework and the example scenarios can be found in the `src/java` folder. The XSD schemas for scenario files and visualization configuration files are located in the `src/resources` folder. Folder `examples` contains the scenario files, the configuration files, the textures and the bitmaps of obstacles used in all the example scenarios.
 
 ## License
 
