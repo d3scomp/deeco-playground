@@ -18,53 +18,38 @@ Each scenario has to be simulated before it can be visualized, i.e., the correct
 The `*-simulate.sh` script launches the simulator. It continuously outputs information about simulation progress and in the end, it prints statistics about the simulation.
 
 The `*-visualize.sh` script launches the visualizer configured with data produced by the simulator. It opens a window, in which the visualization runs. It can be controlled via the following keys:
+- space - pause/resume visualization
 - left arrow - skip several steps back
 - right arrow - skip several steps forward
-- space - pause/resume visualization
+- up arrow - increase the speed of visualization
+- up arrow - decrease the speed of visualization
+- enter - restart visualization from the beginning
 
 ### Scenario 1
 
-The scenario features two types of robots. There is a one robot of the type PredatorRobot, which moves randomly through
-the field. All the other robots are of the type PreyRobot, and are programmed to run away from the predator, if it
-appears near them. The prey robots receive the information about the position of the predator through an ensemble.
-The scenario also show the default visualization without any additional layers.
+The scenario features two types of robots. There is a one robot of the type PredatorRobot, which moves along its predefined path through the field. All the other robots are of the type PreyRobot, and are programmed to run away from the predator, if it appears near them. These robots receive the information about the position of the predator through an ensemble. The scenario is visualized with the default configuration without any additional layers or other adjustments.
 
-Its configuration is in the file `examples/scenarios/predator.xml`.
+Its scenario configuration can be found in the file `examples/scenarios/predator.xml`; and its visualization configuration is in the file `examples/configs/config.xml`.
 
 ### Scenario 2
 
-The Firefighters scenario presents a case in which a team of firefighter robots has an objective to extinguish fires
-appearing on the field. The leader of the firefighter team collects information about each robot's situation, and issues
-orders to its teammates based on that information. The scenario shows usage of an additional layer of the environment,
-the temperature layer, in which the fires appear. Robots in this scenario are equipped with additional temperature
-sensors and fire extinguishers to interact with this layer. There is also the recharge station charging the robors (for movements and extinguishing, the robors consumes energy).
+The Firefighters scenario presents a case in which a team of firefighter robots has an objective to extinguish fires appearing on the field. The leader of the firefighter team collects information about each robot's situation, and issues orders to its teammates based on that information. The scenario shows usage of an additional layer of the environment, the temperature layer, in which the fires appear. Robots in this scenario are equipped with additional temperature sensors and fire extinguishers to interact with this layer. There is also the charging station recharging the robots' batteries (which power their wheels and fire extinguishers).
 
-Its configuration is in the file `examples/scenarios/firefighters.xml`.
+Its scenario configuration can be found in the file `examples/scenarios/firefighters.xml`; and its visualization configuration is in the file `examples/configs/firefighters-config.xml`.
 
 ### Scenario 3
 
-In the Competition scenario, two teams of robots compete with each other for items appearing on the screen. The items
-are interactive objects programmed to disappear when a robot shows up near them, and to reappear later at a different
-location. A team receives a point for each item collected in this way. The simulation stops when a team receives a
-defined number of points. In this scenario, robots' movements consume energy stored in their batteries, which can be
-recharged at charging stations of each team.
+In the Competition scenario, two teams of robots compete with each other for items appearing on the screen. The items are interactive objects programmed to disappear when a robot shows up near them, and to reappear later at a different location. A team receives a point for each item collected in this way. The simulation stops when a team receives a defined number of points. In this scenario, robots' movements consume energy from their batteries, which can be recharged at charging stations of each team.
 
-Its configuration is in the file `examples/scenarios/competition.xml`.
+Its scenario configuration can be found in the file `examples/scenarios/competition.xml`; and its visualization configuration is in the file `examples/configs/competition-config.xml`.
 
 ## Virtual machine
 
 In order to make launching of the project as simple as possible, we have prepared a virtual machine image (for [VirtualBox](https://www.virtualbox.org/)) that can be downloaded [here](http://d3s.mff.cuni.cz/software/deeco/files/deeco-playground-vm.zip). It contains a Linux installation with the project and all of its dependencies already installed, along with IDE and documentation files. On the desktop of the VM you can find a readme file with instructions on running the project, using IDE, etc.
 
-To run the above described scenarios
-* open the terminal (third icon on the left toolbar)
-* change the current directory with the command `cd Desktop/deeco-playground/demos-linux`
-* run the launching scripts, i.e:
-  * `./demo-1-predator-simulate.sh`
-  * `./demo-1-predator-visualize.sh`
-  * `./demo-2-firefighters-simulate.sh`
-  * `./demo-2-firefighters-visualize.sh`
-  * `./demo-3-competition-simulate.sh`
-  * `./demo-3-competition-visualize.sh`
+To run one of the described above scenarios
+* double-click on the corresponding simulation script (on the desktop), e.g. "Firefighters Scenario Simulation". It will run the simulation of the scenario in a terminal.
+* once the simulation is finished, double-click on the corresponding visualization script, e.g. "Firefighters Scenario Visualization". It will open the window with the visualization of the scenario.
 
 ## Using ant build file
 
